@@ -24,7 +24,7 @@ class="row">
 <input type="text" id="apaterno" name="apaterno" class="form-control" required>
 <label for="amaterno">Apellido Materno: </label>
 <input type="text" id="amaterno" name="amaterno" class="form-control" required>
-
+<button class="btn btn-primary form-control">Guardar</button>
 </form>
 </div>
 </div>
