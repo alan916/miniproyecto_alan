@@ -14,8 +14,7 @@
 <body>
 <div class="container">
 <h1>Agregar Registro</h1>
-<div
-class="row">
+<div class="row">
 <div class="col-sm-12">
 <form action="">
 <label for="nombre">Nombre:</label>
@@ -28,6 +27,22 @@ class="row">
 </form>
 </div>
 </div>
+<div class="row">
+<div class="col-sm-12">
+<div class="table table-resonsive">
+<table class="table table-hover table-bordered">
+<tr>
+<th>Nombre</th>
+<th>Apellido paterno</th>
+<th>Apellido materno</th>
+<th>Editar</th>
+<th>Eliminar</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
 </div>
 
     <!-- Optional JavaScript -->
