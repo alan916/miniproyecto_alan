@@ -38,6 +38,9 @@
 <th>Editar</th>
 <th>Eliminar</th>
 </tr>
+<tr>
+<?php foreach
+</tr>
 </table>
 </div>
 </div>
