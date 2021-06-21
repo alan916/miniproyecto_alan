@@ -7,7 +7,7 @@ public function index()
 {
 $gModel = new DatosModel();
 $mensaje = session('mensaje');
-$datos = $gModel->listar Todo();
+$datos = $gModel->listarTodo();
 $data = ["datos" => $datos,"mensaje" => $mensaje];
 return view('listado', $data);
 }
