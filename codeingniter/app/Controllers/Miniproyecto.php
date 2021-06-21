@@ -31,19 +31,18 @@ $respuesta = $gModel->insertar($data);
 if ($respuesta > 0)
 {
 return redirect()->to(base_url('/index.php'))->with('mensaje', '0');
+}else{
 return redirect()->to(base_url('/index.php'))->with('mensaje', '1');
 }
-else
-{
+
 }
-public function actualizar()
-{
+public function actualizar(){
 $gModel = new DatosModel();
 $data = [
 "nombre" => $_POST['nombre'],
 "apellido_paterno" => $_POST['apaterno'],
 "apellido_materno" => $_POST['amaterno'],
-}
+
 ];
 $id = ["id" => $_POST['id']];
 $respuesta = $gModel->actualizar ($data, $id);
@@ -54,13 +53,11 @@ return redirect()->to (base_url('/index.php'))->with('mensaje', '3');
 }
 }
 
-public function eliminar ($idPersona)
-{
+public function eliminar ($idPersona){
 $gModel = new DatosModel();
 $id = ["id" => $idPersona];
 $respuesta = $gModel->eliminar ($id);
-if($respuesta)
-{
+if($respuesta){
 return redirect()->to(base_url('/index.php'))->with('mensaje', '4');
 }else{
 return redirect()->to(base_url('/index.php'))->with('mensaje', '5');
