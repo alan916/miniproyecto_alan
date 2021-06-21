@@ -36,7 +36,7 @@ $routes->get('/', 'Miniproyecto::index');
 $routes->get('/eliminar/(:any)', 'Miniproyecto::eliminar/$1');
 $routes->get('/obtener Informacion/(:any)', 'Miniproyecto::obtenerDatos/$1');
 $routes->post('/actualizar', 'Miniproyecto::actualizar');
-$routes->post('/crear', 'Miniproyecto::insertar");
+$routes->post('/crear', 'Miniproyecto::insertar');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
