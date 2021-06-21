@@ -22,10 +22,10 @@ return view('actualizar', $datos);
 public function insertar()
 {
 $gModel = new DatosModel();
-$data = ["nombre" => $_POST['nombre'], "a_paterno" => $_POST['apaterno'],
+$data = ["nombre" => $_POST['nombre'], "apellido_paterno" => $_POST['apaterno'],
 
 
-"a_materno" => $_POST['amaterno'],
+"apellido_materno" => $_POST['amaterno'],
 ];
 $respuesta = $gModel->insertar($data);
 if ($respuesta > 0)
@@ -41,8 +41,8 @@ public function actualizar()
 $gModel = new DatosModel();
 $data = [
 "nombre" => $_POST['nombre'],
-"a_paterno" => $_POST['apaterno'],
-"a_materno" => $_POST['amaterno'],
+"apellido_paterno" => $_POST['apaterno'],
+"apellido_materno" => $_POST['amaterno'],
 }
 ];
 $id = ["id" => $_POST['id']];
