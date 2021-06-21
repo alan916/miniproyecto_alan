@@ -15,7 +15,7 @@ public function obtenerDatos ($id)
 {
 $gModel = new DatosModel();
 $data = ["id" => $id];
-$respuesta = $gModel->obtener Informacion ($data);
+$respuesta = $gModel->obtenerInformacion ($data);
 $datos = ["datos" => $respuesta];
 return view('actualizar', $datos);
 }
@@ -31,7 +31,7 @@ $respuesta = $gModel->insertar($data);
 if ($respuesta > 0)
 {
 return redirect()->to(base_url('/index.php'))->with('mensaje', '0');
-return redirect()->to(base_url('/index.php'))->with('mensaje','1');
+return redirect()->to(base_url('/index.php'))->with('mensaje', '1');
 }
 else
 {
